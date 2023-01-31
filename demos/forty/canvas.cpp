@@ -96,7 +96,7 @@ void FortyCanvas::OnDraw(wxDC& dc)
     dc.SetFont(* m_font);
     m_game->Redraw(dc);
 #if 0
-    // if player name not set (and selection dialog is not displayed)
+    // if player name was not set (and selection dialog is not displayed)
     // then ask the player for their name
     if (m_player.empty() && !m_playerDialog)
     {
@@ -125,7 +125,7 @@ void FortyCanvas::OnDraw(wxDC& dc)
 
 void FortyCanvas::ShowPlayerDialog()
 {
-    // if player name not set (and selection dialog is not displayed)
+    // if player name is not set (and selection dialog is not displayed)
     // then ask the player for their name
     if (m_player.empty() && !m_playerDialog)
     {
